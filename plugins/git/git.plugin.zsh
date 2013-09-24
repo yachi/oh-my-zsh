@@ -248,6 +248,8 @@ alias gignore='git update-index --assume-unchanged'
 alias gunignore='git update-index --no-assume-unchanged'
 # List temporarily ignored files
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
+# Grep list of files in the index
+alias gfg='git ls-files | grep'
 # Submodules
 alias gf='git fetch'
 compdef _git gf=git-fetch
